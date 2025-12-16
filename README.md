@@ -8,18 +8,18 @@ Workflow package provides FSM (Finite State Machine) implementation for managing
 
 ## Key Features
 
-- ✅ **Long-running processes** - workflows can run for days or weeks
-- ✅ **State persistence** - workflow state is saved after each step
-- ✅ **Delays** - schedule steps to execute after a delay
-- ✅ **Timeouts** - set execution time limits for steps
-- ✅ **Retry with backoff** - automatic retry with exponential/linear/fixed backoff
-- ✅ **Conditional transitions** - dynamic routing based on results
-- ✅ **Parallel execution** - run multiple actions simultaneously
-- ✅ **Saga pattern** - compensations for rollback on failures
-- ✅ **Event Bus integration** - seamless integration via State Handlers
-- ✅ **JSON serialization** ⭐ - visualization on frontend (graphs, blocks)
-- ✅ **Business-friendly** - processes are understandable for non-technical users
-- ✅ **Visual workflow builder** (future) - create workflows via UI
+-  **Long-running processes** - workflows can run for days or weeks
+-  **State persistence** - workflow state is saved after each step
+-  **Delays** - schedule steps to execute after a delay
+-  **Timeouts** - set execution time limits for steps
+-  **Retry with backoff** - automatic retry with exponential/linear/fixed backoff
+-  **Conditional transitions** - dynamic routing based on results
+-  **Parallel execution** - run multiple actions simultaneously
+-  **Saga pattern** - compensations for rollback on failures
+-  **Event Bus integration** - seamless integration via State Handlers
+-  **JSON serialization** - visualization on frontend (graphs, blocks)
+-  **Business-friendly** - processes are understandable for non-technical users
+-  **Visual workflow builder** (future) - create workflows via UI
 
 ## Quick Example
 
@@ -199,18 +199,18 @@ echo $state->currentStepId; // current step
 ## Roadmap
 
 ### MVP (v0.1.0) - ✅ Completed
-- ✅ DSL Layer (Workflow, Step)
-- ✅ Build Layer (WorkflowBuilder, WorkflowValidator)
-- ✅ **Contracts Layer** (ExecutorInterface, StorageInterface, ClockInterface, ActionResolverInterface)
-- ✅ Runtime Layer (WorkflowManager with tick() and actionReceived())
-- ✅ State Management (WorkflowState, WorkflowStatus)
-- ✅ **Serialization Layer** (JSON export/import, WorkflowSerializer, WorkflowDeserializer)
-- ✅ **Expression Language** (Symfony ExpressionLanguage for conditions)
-- ✅ Delays and timeouts
-- ✅ Retry with backoff (Fixed, Linear, Exponential)
-- ✅ Conditional transitions (when)
-- ✅ Parallel execution
-- ✅ Integration helpers (WorkflowLoader)
+-  DSL Layer (Workflow, Step)
+-  Build Layer (WorkflowBuilder, WorkflowValidator)
+-  **Contracts Layer** (ExecutorInterface, StorageInterface, ClockInterface, ActionResolverInterface)
+-  Runtime Layer (WorkflowManager with tick() and actionReceived())
+-  State Management (WorkflowState, WorkflowStatus)
+-  **Serialization Layer** (JSON export/import, WorkflowSerializer, WorkflowDeserializer)
+-  **Expression Language** (Symfony ExpressionLanguage for conditions)
+-  Delays and timeouts
+-  Retry with backoff (Fixed, Linear, Exponential)
+-  Conditional transitions (when)
+-  Parallel execution
+-  Integration helpers (WorkflowLoader)
 
 ### v1.0.0 - Framework Integration (Next)
 - [ ] Framework-specific StateHandlers
